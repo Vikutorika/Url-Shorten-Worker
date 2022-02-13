@@ -1,8 +1,7 @@
 const html404 = `<!DOCTYPE html>
-<body>
-  <h1>404 Not Found.</h1>
-  <p>The url you visit is not found.</p>
-</body>`
+<script>
+window.location('https://404.bili33.top')
+</script>`
 
 
 async function randomString(len) {
@@ -84,7 +83,7 @@ async function handleRequest(request) {
   console.log(path)
   if(!path){
 
-    const html= await fetch("https://cdn.jsdelivr.net/gh/OneSentry/Url-Shorten-Worker@gh-pages/index.html")
+    const html= await fetch("https://cdn.jsdelivr.net/gh/Vikutorika/Url-Shorten-Worker@gh-pages/index.html")
     
     return new Response(await html.text(), {
     headers: {
